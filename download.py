@@ -1,13 +1,14 @@
-import os
-import re
 from pytube import YouTube
 from moviepy.editor import VideoFileClip
+import os
+import re
+
 
 # função para remover caracteres especiais
 def limpar_nome(nome):
     return re.sub(r'[\\/*?:"<>|]', '', nome)
 
-# URL do vídeo do youtube que você deseja baixar
+# URL do vídeo do video a ser baixado
 url = 'https://www.youtube.com/watch?v=VDLisVhhrh8&list=RDVDLisVhhrh8&start_radio=1'
 
 # instancia um objeto youtube com a URL do vídeo
