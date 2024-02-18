@@ -7,10 +7,10 @@ from moviepy.editor import VideoFileClip
 def limpar_nome(nome):
     return re.sub(r'[\\/*?:"<>|]', '', nome)
 
-# URL do vídeo do YouTube que você deseja baixar
+# URL do vídeo do youtube que você deseja baixar
 url = 'https://www.youtube.com/watch?v=VDLisVhhrh8&list=RDVDLisVhhrh8&start_radio=1'
 
-# instancia um objeto YouTube com a URL do vídeo
+# instancia um objeto youtube com a URL do vídeo
 yt = YouTube(url)
 
 # obtém o título do vídeo e remove caracteres especiais
@@ -41,7 +41,7 @@ diretorio_mp3 = os.path.join(os.getcwd(), 'mp3')
 if not os.path.exists(diretorio_mp3):
     os.makedirs(diretorio_mp3)
 
-# carrega o vídeo usando o MoviePy
+# carrega o vídeo usando o moviepy
 video_clip = VideoFileClip(caminho_video)
 
 # extrai o áudio do vídeo
