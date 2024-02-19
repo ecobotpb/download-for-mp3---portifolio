@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download de MP3</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cole o link do vídeo aqui para baixar</h1>
+        <form action="/download" method="post">
+            <input type="text" name="video_url" placeholder="Cole o link do vídeo">
+            <button type="submit">Baixar</button>
+        </form>
+    </div>
+</body>
+</html>
